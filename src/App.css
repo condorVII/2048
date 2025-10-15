@@ -1,0 +1,199 @@
+/*******************************************************************************************************
+
+z-index 1-11 jest zarezerwowany dla kafelków !!!!!!!!!!
+
+*******************************************************************************************************/
+
+*{
+  font-family: Verdana;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  color: white;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgb(30, 30, 30);
+}
+
+.center {
+  height: fit-content;
+  width: fit-content;
+}
+
+.scoreBoard{
+  float: right;
+  text-align: center;
+  background-color: rgb(78, 78, 78);
+  margin-bottom: 0.5vh;
+  padding: 1.5vh;
+  font-size: 3vh;
+  border-radius: 1vh;
+  color: white;
+}
+
+table{
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  border-radius: 1vh;
+}
+
+.cell{
+  height: 18vh;
+  width: 18vh;
+  border-radius: 1vh;
+  z-index: 13;
+}
+ 
+.overcell{
+  height: 18vh;
+  width: 18vh;
+  background-color: rgb(78, 78, 78);
+  border-radius: 1vh;
+  z-index: 12;
+}
+
+td{
+  padding: 1vh;
+}
+
+.settingsbutton{
+  position: fixed;
+  top: 1vh;
+  left: 1vh;
+  height: 5vh;
+  width: 5vh;
+}
+
+.settings {
+  overflow: hidden;
+  background-color: rgb(225, 225, 225);
+  position: fixed;
+  top: 10vh;
+  left: 30vw;
+  width: 40vw;
+  height: 80vh;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+  border-radius: 1vh;
+  z-index: 14;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.settings.visible {
+  opacity: 1;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.settingsHeader{
+  text-align: center;
+  font-size: 5vh;
+}
+
+.settingsOption{
+  padding: 2vh;
+  font-size: 2vh;
+}
+
+.gameOverBg{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(225, 225, 225, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 15;
+  transition: 0.15s;
+}
+
+.gameOverText{
+  color: rgb(50, 50, 50);
+}
+
+.gameOverButtonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+button{
+  text-align: center;
+  background-color: rgb(78, 78, 78);
+  margin-bottom: 0.5vh;
+  padding: 1.5vh;
+  font-size: 3vh;
+  border-radius: 1vh;
+  color: white;
+}
