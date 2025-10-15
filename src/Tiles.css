@@ -1,0 +1,119 @@
+/*******************************************************************************************************
+
+z-index 1-11 jest zarezerwowany dla kafelków !!!!!!!!!!
+
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+
+animacje
+
+*******************************************************************************************************/
+
+@keyframes popanim{
+  0% {scale: 100%;}
+  50% {scale: 110%;}
+  100% {scale: 100%;}
+}
+
+/*******************************************************************************************************
+
+css
+
+*******************************************************************************************************/
+
+.tile {
+  text-align: center;
+  border-radius: 1vh;
+  align-content: center;
+  font-weight: bold;
+  position: relative;
+}
+
+.tileanim{
+  transition: transform 0.15s ease-in-out;
+}
+
+
+ 
+.tilepop{
+  animation-name: popanim;
+  animation-duration: 0.15s;
+}
+
+.tile2{
+  background-color: rgb(200, 200, 200);
+  color: rgb(55, 55, 55);
+  font-size: 9vh;
+  z-index: 1;
+}
+
+.tile4{
+  background-color: rgb(250, 225, 200);
+  color: rgb(55, 55, 55);
+  font-size: 9vh;
+  z-index: 2;
+}
+
+.tile8{
+  background-color: rgb(255, 200, 150);
+  color: rgb(55, 55, 55);
+  font-size: 9vh;
+  z-index: 3;
+}
+
+.tile16{
+  background-color: rgb(255, 180, 150);
+  color: rgb(225, 225, 225);
+  font-size: 9vh;
+  z-index: 4;
+}
+
+.tile32{
+  background-color: rgb(255, 150, 150);
+  color: rgb(225, 225, 225);
+  font-size: 9vh;
+  z-index: 5;
+}
+
+.tile64{
+  background-color: rgb(255, 100, 100);
+  color: rgb(225, 225, 225);
+  font-size: 9vh;
+  z-index: 6;
+}
+
+.tile128{
+  background-color: rgb(235, 205, 115);
+  color: rgb(225, 225, 225);
+  font-size: 7vh;
+  z-index: 7;
+}
+
+.tile256{
+  background-color: rgb(235, 205, 100);
+  color: rgb(225, 225, 225);
+  font-size: 7vh;
+  z-index: 8;
+}
+
+.tile512{
+  background-color: rgb(235, 205, 80);
+  color: rgb(225, 225, 225);
+  font-size: 7vh;
+  z-index: 9;
+}
+
+.tile1024{
+  background-color: rgb(235, 205, 65);
+  color: rgb(225, 225, 225);
+  font-size: 5vh;
+  z-index: 10;
+}
+
+.tile2048{
+  background-color: rgb(235, 195, 45);
+  color: rgb(225, 225, 225);
+  font-size: 5vh;
+  z-index: 11;
+}
